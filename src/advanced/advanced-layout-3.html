@@ -6,13 +6,61 @@
     <title>Advanced Layout 3</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+        #advanced-layout-3 {
+          display: grid;
+          grid-template-columns: 3fr 2fr 5fr;
+          grid-template-rows: repeat(3, 1fr);
+
+        }
+
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        header, nav, footer {
+          align-self: center;
+          justify-self: center;
+          z-index: 12;
+          width: 60%;
+          height: 70%;
+        }
+
+        header {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        nav {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+
+        }
+
+        main {
+          grid-column-start: 2;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 4;
+        }
+
+        footer {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 3;
+          grid-row-end: 4;
+        }   
+
     </style>
   </head>
   <body id="advanced-layout-3">
     <header><h1>Advanced Layout 3</h1></header>
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
     <main></main>
-    <footer></footer>
+    <footer>kaas</footer>
   </body>
 </html>

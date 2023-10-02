@@ -6,8 +6,29 @@
     <title>Basic Layout 6</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
-    </style>
+        #basic-layout-6 {
+          display: grid;
+          grid-template-rows: 15% 75%; 
+          grid-template-columns: 15% 20% 50%;
+
+          grid-template-areas: 
+            "header header header footer"
+            "aside main main footer"
+            "aside main main footer"
+        }
+        header {
+          grid-area: header;
+        }
+        nav {
+          grid-area: aside;
+        }
+        main {
+          grid-area: main;
+        }
+        footer {
+          grid-area: footer;
+        }    
+        </style>
   </head>
   <body id="basic-layout-6">
     <header><h1>Basic Layout 6</h1></header>

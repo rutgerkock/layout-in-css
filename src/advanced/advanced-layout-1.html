@@ -6,8 +6,28 @@
     <title>Advanced Layout 1</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
-    </style>
+        #advanced-layout-1 {
+          display: grid;
+          grid-template-rows: 25% 25% 25% 25%;
+          grid-template-areas: 
+            ". header header header"
+            "aside aside aside ."
+            ". main main main"
+            ". footer footer footer"
+        }
+        header {
+          grid-area: header;
+        }
+        nav {
+          grid-area: aside;
+        }
+        main {
+          grid-area: main;
+        }
+        footer {
+          grid-area: footer;
+        }     
+        </style>
   </head>
   <body id="advanced-layout-1">
     <header><h1>Advanced Layout 1</h1></header>

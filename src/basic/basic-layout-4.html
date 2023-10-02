@@ -6,8 +6,28 @@
     <title>Basic Layout 4</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
-    </style>
+        #basic-layout-4 {
+          display: grid;
+          grid-template-rows: 50% 50%; 
+          grid-template-columns: 0 85%;
+
+          grid-template-areas: 
+            "main main main header"
+            "footer footer footer aside"
+        }
+        header {
+          grid-area: header;
+        }
+        nav {
+          grid-area: aside;
+        }
+        main {
+          grid-area: main;
+        }
+        footer {
+          grid-area: footer;
+        }       
+        </style>
   </head>
   <body id="basic-layout-4">
     <header><h1>Basic Layout 4</h1></header>
